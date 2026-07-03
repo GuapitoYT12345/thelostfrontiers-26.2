@@ -17,6 +17,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
+// Adding and important comment!
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TheLostFrontiers.MOD_ID)
 public class TheLostFrontiers {
