@@ -1,5 +1,6 @@
 package com.opaqueyardinfinity.thelostfrontiers;
 
+import com.opaqueyardinfinity.thelostfrontiers.block.ModBlocks;
 import com.opaqueyardinfinity.thelostfrontiers.item.ModItems;
 import org.slf4j.Logger;
 
@@ -31,6 +32,7 @@ public class TheLostFrontiers {
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         NeoForge.EVENT_BUS.register(this);
@@ -49,6 +51,16 @@ public class TheLostFrontiers {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SILVER_INGOT);
             event.accept(ModItems.RAW_SILVER);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.SILVER_BLOCK);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.RAW_SILVER_BLOCK);
+            event.accept(ModBlocks.SILVER_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
         }
 
     }

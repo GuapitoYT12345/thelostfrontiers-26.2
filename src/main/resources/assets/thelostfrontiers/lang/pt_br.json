@@ -1,6 +1,12 @@
 {
   "item.thelostfrontiers.silver_ingot": "Lingote de Prata",
-  "item.thelostfrontiers.raw_silver": "Prata Bruta"
+  "item.thelostfrontiers.raw_silver": "Prata Bruta",
+
+  "block.thelostfrontiers.silver_block": "Bloco de Prata",
+  "block.thelostfrontiers.raw_silver_block": "Bloco de Prata Bruta",
+  "block.thelostfrontiers.silver_ore": "Minério de Prata",
+  "block.thelostfrontiers.deepslate_silver_ore": "Minério de Prata de Ardósia Profunda"
 
 
 }
+

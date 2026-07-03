@@ -1,7 +1,11 @@
 {
   "item.thelostfrontiers.silver_ingot": "Silver Ingot",
-  "item.thelostfrontiers.raw_silver": "Raw Silver"
+  "item.thelostfrontiers.raw_silver": "Raw Silver",
 
+  "block.thelostfrontiers.silver_block": "Block of Silver",
+  "block.thelostfrontiers.raw_silver_block": "Block of Raw Silver",
+  "block.thelostfrontiers.silver_ore": "Silver Ore",
+  "block.thelostfrontiers.deepslate_silver_ore": "Deepslate Silver Ore"
 
 
 }
