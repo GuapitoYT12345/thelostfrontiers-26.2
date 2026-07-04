@@ -23,10 +23,10 @@ public class ModBlocks {
              properties -> new Block(properties.strength(25f)
                      .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
-             properties -> new Block(properties.strength(25f)
+             properties -> new Block(properties.strength(3f)
                      .requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
-             properties -> new Block(properties.strength(25f)
+             properties -> new Block(properties.strength(4.5f)
                      .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
