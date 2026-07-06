@@ -1,9 +1,6 @@
 package com.opaqueyardinfinity.thelostfrontiers;
 
-import com.opaqueyardinfinity.thelostfrontiers.datagen.ModBlockLootTableProvider;
-import com.opaqueyardinfinity.thelostfrontiers.datagen.ModBlockTagsProvider;
-import com.opaqueyardinfinity.thelostfrontiers.datagen.ModModelProvider;
-import com.opaqueyardinfinity.thelostfrontiers.datagen.ModRecipeProvider;
+import com.opaqueyardinfinity.thelostfrontiers.datagen.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -29,5 +26,6 @@ public class TheLostFrontiersDataGen {
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+        generator.addProvider(true, new ModEquipmentAssetsProvider(packOutput));
     }
 }
