@@ -2,6 +2,7 @@ package com.opaqueyardinfinity.thelostfrontiers.datagen;
 
 import com.opaqueyardinfinity.thelostfrontiers.TheLostFrontiers;
 import com.opaqueyardinfinity.thelostfrontiers.block.ModBlocks;
+import com.opaqueyardinfinity.thelostfrontiers.item.ModArmorMaterials;
 import com.opaqueyardinfinity.thelostfrontiers.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -27,6 +28,12 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.SILVER_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.SILVER_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateSpear(ModItems.SILVER_SPEAR.get());
+
+        /* ARMOR */
+        itemModels.generateTrimmableItem(ModItems.SILVER_HELMET.get(), ModArmorMaterials.SILVER_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModels.generateTrimmableItem(ModItems.SILVER_CHESTPLATE.get(), ModArmorMaterials.SILVER_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        itemModels.generateTrimmableItem(ModItems.SILVER_LEGGINGS.get(), ModArmorMaterials.SILVER_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        itemModels.generateTrimmableItem(ModItems.SILVER_BOOTS.get(), ModArmorMaterials.SILVER_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
         /* BLOCKS */
         blockModels.createTrivialCube(ModBlocks.SILVER_BLOCK.get());

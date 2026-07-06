@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "thelostfrontiers:silver"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "thelostfrontiers:silver"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "thelostfrontiers:silver"
+      }
+    ]
+  }
+}

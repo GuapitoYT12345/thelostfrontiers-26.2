@@ -5,6 +5,7 @@ import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -28,6 +29,15 @@ public class ModItems {
     public static final DeferredItem<Item> SILVER_SPEAR = ITEMS.registerItem("silver_spear",
             properties -> new Item(properties.spear(ModToolTiers.SILVER, 1, 1.0125f, 0.55f,
                     2.52f, 10.5f, 6.625f, 5.1f, 10.625f, 4.6f)));
+
+    public static final DeferredItem<Item> SILVER_HELMET = ITEMS.registerItem("silver_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final DeferredItem<Item> SILVER_CHESTPLATE = ITEMS.registerItem("silver_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final DeferredItem<Item> SILVER_LEGGINGS = ITEMS.registerItem("silver_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final DeferredItem<Item> SILVER_BOOTS = ITEMS.registerItem("silver_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
 
     public static void register(IEventBus eventBus) {
